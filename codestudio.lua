@@ -6,13 +6,13 @@ You may use this program in your operating systems as long as you keep these lin
 
 local files = {
   [1] = {
-        "/codestudio/images/main",
+        "/cstudio/images/main",
         "https://raw.githubusercontent.com/CoolMan119/CodeStudio/master/images/main"
   }
 }
 
 -- Check if files exist
-if fs.exists("codestudio") == false then
+if fs.exists("cstudio") == false then
   -- Start downloading all the files
   local req
   for k,v in pairs(files) do
@@ -25,7 +25,7 @@ if fs.exists("codestudio") == false then
 end
 
 -- Load images
-main = paintutils.loadImage("main")
+main = paintutils.loadImage("/cstudio/images/main")
 
 -- Functions
 local function centerText(text)
